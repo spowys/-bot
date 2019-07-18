@@ -1,1 +1,1 @@
-worker: mashu.py
+worker:python mashu.py
