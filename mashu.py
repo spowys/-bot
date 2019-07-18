@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import random
+import os
 
 client = discord.Client()
 
@@ -66,4 +67,5 @@ async def on_message(message):
             embed.set_image(url=message.mentions[0].avatar_url)
             await message.channel.send(embed=embed)
 
-client.run("NjAwOTI4NzA0Nzk2OTUwNTI4.XS9akw.Zwj_fK-u7KjSA4hCnV8mLxhnPHk")
+access_tokken = os.environ["BOT_TOKEN"]            
+client.run(access_token)
